@@ -8,7 +8,7 @@ A moderator is a function, that given a comparison value and performance data, c
 
 **Zach - a function that indicates the magnitude of influence of some characteristic of an intervention**
 
-Zach's paper on defining moderators and causal pathways (not the biggest fan): https://www.frontiersin.org/articles/10.3389/fpubh.2018.00136/full
+Zach's paper on defining moderators and causal pathways (not the biggest fan): <https://www.frontiersin.org/articles/10.3389/fpubh.2018.00136/full>
 - Precision feedback is the implementation strategy
 -
 
