@@ -1,41 +1,38 @@
 # Mod Collector Knowledge Object Read Me
-This Knowledge Object collection packages moderator functions original developed for the Precision Feedback pipeline
+This Knowledge Object collection packages moderator functions original developed for the Precision Feedback Pipeline.  
+
+## What is a causal pathway?
+A causal pathway represents the relationships among variables and outcomes of interest in a given context. In implementation research, causal pathways specify the structural relationships (mechanism) between implementation strategies and implementation outcomes. Causal pathways account for an initial implementation strategy, moderators, and preconditions that influence the outcome of interest.
+
+*Should causal pathways/moderators/preconditions be described in the context of implementation science? If the intent is to share these moderators and other pipeline components for other people building software for implementation mechanisms, the this would make sense. Are there other use cases for the moderators?*
+
+## What is an implementation strategy?
+An implementation strategy is a chosen set of behaviors, tasks, or interventions perceived to address barriers to behavioral and/or organizational change.
+
+## What is a precondition?
+A precondition is a factor that is necessary in order for a causal pathway to be activated.
 
 ## What is a moderator?
-A moderator is a function, that given a comparison value and performance data, can quantify the degree of motivation a precondition is likely to produce so that a message can be ranked
+Moderators are functions that given an input, indicates the magnitude of influence of some characteristic on an intervention.
 
-*Zach - A moderator as a dial. A moderator is a function that given some inputs produces an estimate of the magnitude of influence. In causal pathways, this assess the magnitude of influence of a causal pathway. Predonditions are switches on and off. Moderators are like dials. If the causal pathway is there, the moderator asses the magnitude of it.*
-
-**Zach - a function that indicates the magnitude of influence of some characteristic of an intervention**
-
-Zach's paper on defining moderators and causal pathways (not the biggest fan): <https://www.frontiersin.org/articles/10.3389/fpubh.2018.00136/full>
-- Precision feedback is the implementation strategy
-- *"Moderators are factors that increase or decrease the level of influence of an implementation strategy on an outcome"*
-
-
-*Questions to ask*
-- What exactly is a moderator?
-- How do we isolate the definition of a moderator from the PFP?
-- My understanding of moderators is that their function is to define the degree of motivation a precondition is likely to produce so that the choice in message for tailored feedback can be ranked and chosen. ->
-- The moderator determines the predicted utility of the causal pathway
-- The precondition is what already exists.
-- Does the precondition need to be acknowledge in the knowledge object?
-- It was noted previously that the moderator function does not need to refer to the causal pathway.
+In the case of implementation strategies, a moderator quantifies the magnitude of influence of a factor on that ability of that implementation strategy to achieve it's desired outcome.  
 
 ## Who are these moderators for?
+Individuals developing software pipelines based on causal pathway design. Individuals wanting to modify existing computable causal pathways.
 
-*Questions to ask*
-- Who will be accessing these moderators in the future?
-- -> Other investigators developing precision audit and feedback programs?
-- Are there other uses for these?
+*Questions to ask:*
+- *Who will be accessing these moderators in the future?*
+- *-> Other investigators developing precision audit and feedback programs?*
+- *Are there other uses for these?*
 
 ## What will people use these moderators for?
+The packaged moderators in this knowledge object collection can be plugged into computable causal pathway mechanism, to inform the influence of selected characteristics on the magnitude of influence on the intervention represented by the causal pathway.
 
 *Questions to ask*
-- Once we identify who these moderator functions are being packaged for, concurrently we need to ask "what will they use these for?"
+- *Can these moderators be used outside the mechanisms represented by causal pathways? Or are these primarily intended for representation by causal pathways?*
 
 ## What moderators are packaged?
-The following moderators are going to be packaged: *define each of these*
+The following moderators are going to be packaged:
 1. Gap size
 2. Trend slope
 3. Monotonic prediction
@@ -43,16 +40,36 @@ The following moderators are going to be packaged: *define each of these*
 These moderators function independently
 
 ### Gap size
-*Insert description*
-- *inputs* - *my understanding is that these are individual performance data + peer comparison values*
-- *outputs* - *this is some sort of scalar absolute value*
+**Description:**
+
+**Inputs:**
+- performance_data_df
+- comparison_values
+
+**Outputs:**
+- goal_gap_size_df
+
 
 ### Trend Slope
-*Insert description*
-- *inputs*
-- *outputs*
+**Description:**
+
+**Inputs:**
+- performance_data_df
+- comparison_values
+
+**Outputs:**
+- slope_final_df
 
 ### Monotonic prediction
-*Insert description*
-- *inputs*
-- *outputs*
+**Description:**
+
+**Inputs:**
+- performance_data_df
+- comparison_values
+
+**Outputs:**
+- trend_df = "no trend", "non-monotonic", or "monotonic"
+
+*Questions to ask*
+- *What exactly are the "comparison_value" inputs, and how can the performance and comparison inputs best be described outside of the context of the PFP?*
+- *Clarify the outputs/descriptions of the 3 provided moderators*
