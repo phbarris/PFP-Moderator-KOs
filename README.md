@@ -1,4 +1,4 @@
-# Mod Collector Knowledge Object Read Me
+# Mod Collector Knowledge Object Collection
 This Knowledge Object collection packages moderator functions original developed for the Precision Feedback Pipeline.  
 
 ## What is a causal pathway?
