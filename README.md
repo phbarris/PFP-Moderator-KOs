@@ -10,7 +10,7 @@ A moderator is a function, that given a comparison value and performance data, c
 
 Zach's paper on defining moderators and causal pathways (not the biggest fan): <https://www.frontiersin.org/articles/10.3389/fpubh.2018.00136/full>
 - Precision feedback is the implementation strategy
--
+- *"Moderators are factors that increase or decrease the level of influence of an implementation strategy on an outcome"*
 
 
 *Questions to ask*
