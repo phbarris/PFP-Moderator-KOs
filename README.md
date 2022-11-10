@@ -1,4 +1,7 @@
 # Mod Collector Knowledge Object Collection
+
+*this readme file is not finalized - information contained is currently for further discussion and development of knowledge objects.*
+
 This Knowledge Object collection packages moderator functions original developed for the Precision Feedback Pipeline.  
 
 ## What is a causal pathway?
