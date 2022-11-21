@@ -1,7 +1,8 @@
-# Mod Collector Knowledge Object Collection
+**Consider renaming to "feedback moderator KO"**
 
-*this readme file is not finalized - information contained is currently for further discussion and development of knowledge objects.*
+- anchoring on a digital intervention, there may be some other moderators that we can say, as far as we know, for all digital interventions. In a digital object intervention set, that might include habituation (number of times an intervention is received), could be specific causal pathways, one mechanism might be awareness or motivation, count moderator that leads to
 
+# Mod Collector Knowledge Object Read Me
 This Knowledge Object collection packages moderator functions original developed for the Precision Feedback Pipeline.  
 
 ## What is a causal pathway?
@@ -20,6 +21,9 @@ Moderators are functions that given an input, indicates the magnitude of influen
 
 In the case of implementation strategies, a moderator quantifies the magnitude of influence of a factor on that ability of that implementation strategy to achieve it's desired outcome.  
 
+
+**Include discussion of measures**
+
 ## Who are these moderators for?
 Individuals developing software pipelines based on causal pathway design. Individuals wanting to modify existing computable causal pathways.
 
@@ -29,7 +33,10 @@ Individuals developing software pipelines based on causal pathway design. Indivi
 - *Are there other uses for these?*
 
 ## What will people use these moderators for?
-The packaged moderators in this knowledge object collection can be plugged into computable causal pathway mechanism, to inform the influence of selected characteristics on the magnitude of influence on the intervention represented by the causal pathway.
+The packaged moderators in this knowledge object collection can be plugged into computable causal pathway mechanism, to inform the influence of selected characteristics on the magnitude of influence on the intervention represented by the causal pathway. -identifies the strength of influence of an intervention given this definition
+
+
+*So we know that these moderators have specific effects on the percision feedback strategy* -> *so this mod collector is based on feedback theory.* -> *clarify this in the readme*
 
 *Questions to ask*
 - *Can these moderators be used outside the mechanisms represented by causal pathways? Or are these primarily intended for representation by causal pathways?*
@@ -44,6 +51,16 @@ These moderators function independently
 
 ### Gap size
 **Description:**
+
+Inputs - a single vector of performance data, measure name, comparison value
+
+However many moderators there are will interact with that input.
+
+Bring this up a littlle
+
+Inputs: historical data
+Outputs: moderators
+
 
 **Inputs:**
 - performance_data_df
@@ -76,3 +93,6 @@ These moderators function independently
 *Questions to ask*
 - *What exactly are the "comparison_value" inputs, and how can the performance and comparison inputs best be described outside of the context of the PFP?*
 - *Clarify the outputs/descriptions of the 3 provided moderators*
+
+
+At next meeting, we will create metadata have readme in the mod collector representation\
